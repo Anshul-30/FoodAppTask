@@ -1,149 +1,130 @@
+
+
+
 import imagePath from './imagePath';
-
-export const vendorData = {
-  name: 'Foodies Hub',
-  banner:
-    'https://s3-alpha-sig.figma.com/img/b5dc/b5f9/d658f16ac5515b1a7be8befcc7ede0f3?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=luUYRoLgiV2dASWd~wfM9c6m6bE8O8dC22PijvzkQt1VBA3luaGWpaCtUQbWqtzeAqZVAX6IryOwooUKtJQinrsJc25Shk20PNvCApTenpsUusBhSQEeq3uBO3yZ7ko~Kjx6A-q7FR07XcaczfkaZagEhUfksHI4qv26e6T5w0-bvA2vvufPNvoFw7Jx5s29egItwFl9b15pYfz5RPR~cbeLotWMVRNdFtMoukVSMadrBm6Hv77M9usaWg05YNrCRLkaR18wy8e-uybYFtzLIn7dSZxemNhtawebJ8S6gKDlyKHquseB1pMHMzazHAm3fthH~F~B4IYpeDPDS02P9g__',
-  logo: 'https://s3-alpha-sig.figma.com/img/a0e9/9eca/880bbcba86b9f566f42569c27f42f7ac?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=R-qUby4x36MlWIAeX0muVKAq9HGhsAwpeSItHdiW2xbxKJbZtn-MCqflJj-PbzPvQRps3aC6fQ-P03RWCjWMtM5aITcjw2c3jOrQpL7bKPAcIf0QCGmbCJjACJaDcHnDSbyNCPR3TJo2uJGDIbDg5yKnf8LKtkGL3icbb2VXSO1BHL-c8358RM-DZtS0xjnoOCXUOeAxy7wMIvZVBAqqwYWDe~b~FGi928jdEeIsAdjfevY08wGIISQORZMCIwF884fELXzjNYyI9TxxbRA3fB9a8BZBDZbML-BvH0o3bn2biHwcsLruBETnaUrdmKaNoVa7240C8WDOPZIOGxU1tg__',
-  distance: '0.2 Km',
-  time: '30 min',
-  isOpen: 1,
-};
-
-// Product descriptions mapping
-export const productDescriptions = {
-  'Berry Blast Acai Bowl':
-    'Fresh acai berries blended with organic fruits, topped with granola, coconut flakes, and fresh berries. A healthy and delicious superfood bowl packed with antioxidants.',
-  "Grilled Chicken 'n veggies":
-    'Tender grilled chicken breast served with a medley of fresh seasonal vegetables, marinated in herbs and spices. A perfect balance of protein and nutrients.',
-  'Juicy Lucy salad':
-    'Fresh mixed greens with cherry tomatoes, cucumber, bell peppers, and our signature creamy dressing. Light, refreshing, and full of flavor.',
-  'Mushroom Stroganoff':
-    'Creamy mushroom stroganoff with tender mushrooms in a rich, savory sauce served over pasta. A comforting vegetarian classic.',
-  'Margherita Pizza':
-    'Classic Italian pizza with fresh mozzarella, tomato sauce, and basil leaves on our hand-tossed dough. Simple, authentic, and delicious.',
-  'Chicken Caesar Wrap':
-    'Grilled chicken, romaine lettuce, parmesan cheese, and Caesar dressing wrapped in a soft tortilla. Perfect for a quick, satisfying meal.',
-  'Beef Burger Deluxe':
-    'Juicy beef patty with fresh lettuce, tomatoes, onions, pickles, and our special sauce on a toasted bun. A classic burger experience.',
-  'Vegetarian Pasta':
-    'Fresh pasta tossed with seasonal vegetables in a light olive oil and herb sauce. Simple, healthy, and full of flavor.',
-  'Thai Green Curry':
-    'Aromatic green curry with coconut milk, fresh vegetables, and fragrant Thai herbs. Served with jasmine rice.',
-  'Sushi Roll Combo':
-    'Fresh sushi rolls with premium fish, avocado, and cucumber. Served with wasabi, ginger, and soy sauce.',
-  'BBQ Ribs Platter':
-    'Tender, slow-cooked ribs with our signature BBQ sauce. Served with coleslaw and fries.',
-  'Fish & Chips':
-    'Beer-battered fish fillets served with golden fries and tartar sauce. A British classic done right.',
-  'Chicken Tikka Masala':
-    'Tender chicken in a rich, creamy tomato-based sauce with aromatic spices. Served with basmati rice.',
-  'Greek Gyros':
-    'Seasoned meat wrapped in warm pita bread with tzatziki sauce, onions, and tomatoes.',
-  'Taco Supreme':
-    'Three soft tacos filled with seasoned meat, lettuce, cheese, tomatoes, and sour cream.',
-  'Pad Thai Noodles':
-    'Stir-fried rice noodles with shrimp, tofu, bean sprouts, and our signature Pad Thai sauce.',
-  'Butter Chicken':
-    'Creamy and mildly spiced chicken curry in a rich tomato and butter sauce. A popular Indian favorite.',
-  'Lamb Kebab':
-    'Grilled lamb skewers marinated in Mediterranean spices. Served with rice and grilled vegetables.',
-  'Seafood Paella':
-    'Traditional Spanish rice dish with fresh seafood, saffron, and aromatic spices.',
-  'Chicken Quesadilla':
-    'Grilled tortilla filled with seasoned chicken, cheese, and peppers. Served with salsa and sour cream.',
-  'Penne Arrabbiata':
-    'Penne pasta in a spicy tomato sauce with garlic, red chilies, and fresh herbs.',
-  'Beef Stir Fry':
-    'Tender beef strips stir-fried with fresh vegetables in a savory sauce. Served over rice.',
-  'Salmon Teriyaki':
-    'Grilled salmon glazed with teriyaki sauce. Served with steamed vegetables and rice.',
-  'Veggie Burger':
-    'Plant-based patty with fresh vegetables and our special sauce on a whole grain bun.',
-  'Chicken Wings':
-    'Crispy chicken wings tossed in your choice of sauce. Served with celery and ranch dressing.',
-  'Pork Chops':
-    'Grilled pork chops with herbs and garlic. Served with mashed potatoes and green beans.',
-  'Shrimp Scampi':
-    'Succulent shrimp in garlic butter sauce over linguine pasta with fresh herbs.',
-  'Turkey Sandwich':
-    'Sliced turkey breast with lettuce, tomato, and mayo on fresh bread.',
-  'Chicken Parmesan':
-    'Breaded chicken breast topped with marinara sauce and melted cheese. Served with pasta.',
-  'Beef Tacos':
-    'Seasoned ground beef in soft tortillas with lettuce, cheese, and tomatoes.',
-  'Veggie Pizza':
-    'Fresh vegetable pizza with bell peppers, mushrooms, onions, and olives on our signature crust.',
-  'Chicken Fajitas':
-    'Sizzling chicken strips with peppers and onions. Served with tortillas and toppings.',
-  'Pasta Carbonara':
-    'Creamy pasta with bacon, eggs, parmesan cheese, and black pepper. A Roman classic.',
-  'Grilled Salmon':
-    'Fresh salmon fillet grilled to perfection with lemon and herbs.',
-  'Chicken Curry':
-    'Aromatic chicken curry with onions, tomatoes, and traditional spices.',
-  'Beef Burritos':
-    'Large flour tortilla filled with seasoned beef, rice, beans, and cheese.',
-  'Vegetable Stir Fry':
-    'Fresh mixed vegetables stir-fried in a light sauce. Healthy and delicious.',
-  'Chicken Satay':
-    'Grilled chicken skewers with peanut sauce and cucumber salad.',
-  'Pork Tenderloin':
-    'Tender pork medallions with apple glaze. Served with roasted vegetables.',
-  'Fish Curry':
-    'Fresh fish in a coconut-based curry sauce with aromatic spices.',
-  'Chicken Biryani':
-    'Fragrant basmati rice cooked with spiced chicken and aromatic herbs.',
-  'Beef Steak':
-    'Premium beef steak grilled to your preference. Served with garlic butter.',
-  'Veggie Wrap':
-    'Fresh vegetables wrapped in a spinach tortilla with hummus and avocado.',
-  'Chicken Shawarma':
-    'Marinated chicken wrapped in pita bread with garlic sauce and vegetables.',
-  'Pasta Alfredo':
-    'Creamy fettuccine pasta with parmesan cheese and butter sauce.',
-  'Grilled Prawns':
-    'Succulent prawns grilled with herbs and lemon. Served with rice.',
-  'Chicken Korma':
-    'Mild and creamy chicken curry with cashews and aromatic spices.',
-  'Beef Noodles': 'Tender beef with noodles in a savory broth with vegetables.',
-  'Vegetable Curry':
-    'Mixed vegetables in a spiced curry sauce. Served with rice or bread.',
-  'Chicken Teriyaki':
-    'Grilled chicken glazed with sweet teriyaki sauce. Served with vegetables.',
-  'Pork Ribs':
-    'Slow-cooked pork ribs with BBQ sauce. Fall-off-the-bone tender.',
-  'Fish Tacos':
-    'Fresh fish in soft tortillas with cabbage slaw and lime crema.',
-};
-
-// Vegetarian items mapping
 export const vegetarianItems = [
   'Berry Blast Acai Bowl',
   'Juicy Lucy salad',
   'Mushroom Stroganoff',
   'Margherita Pizza',
   'Vegetarian Pasta',
+  'Sushi Roll Combo', // only if veg rolls included
   'Veggie Burger',
   'Veggie Pizza',
   'Vegetable Stir Fry',
-  'Vegetable Curry',
   'Veggie Wrap',
+  'Pasta Alfredo',
+  'Grilled Prawns', // ❌ remove if not veg
+  'Vegetable Curry',
+  'Penne Arrabbiata',
+  'Pasta Carbonara', // ❌ remove if you don’t want egg/bacon
 ];
 
-// Helper function to get product description
-export const getProductDescription = productName => {
-  const baseName = productName.replace(/\s+\d+$/, ''); // Remove trailing numbers like " 2", " 3"
-  return (
-    productDescriptions[baseName] ||
-    'A delicious and carefully crafted dish made with the finest ingredients. Our chefs prepare each item with love and attention to detail, ensuring you get the best flavors and quality in every bite.'
-  );
-};
-
-// Helper function to check if product is vegetarian
-export const isVegetarian = productName => {
-  const baseName = productName.replace(/\s+\d+$/, ''); // Remove trailing numbers
-  return vegetarianItems.includes(baseName);
+export const productDescriptions = {
+  'Berry Blast Acai Bowl':
+    'A chilled acai blend topped with tropical fruits and crunchy granola for a refreshing boost.',
+  "Grilled Chicken 'n veggies":
+    'Tender grilled chicken breast paired with roasted seasonal vegetables and herbs.',
+  'Juicy Lucy salad':
+    'A garden-fresh salad with cucumbers, tomatoes, and leafy greens tossed in a zesty dressing.',
+  'Mushroom Stroganoff':
+    'Savory mushrooms in a creamy stroganoff sauce served over warm pasta.',
+  'Margherita Pizza':
+    'Classic pizza with fresh mozzarella, basil leaves, and tangy tomato sauce on a thin crust.',
+  'Chicken Caesar Wrap':
+    'Crisp romaine, grilled chicken, and Caesar dressing wrapped in a soft tortilla.',
+  'Beef Burger Deluxe':
+    'Juicy beef patty stacked with cheese, lettuce, tomato, and house-made sauce.',
+  'Vegetarian Pasta':
+    'Pasta tossed with sautéed vegetables, garlic, and a drizzle of olive oil.',
+  'Thai Green Curry':
+    'Aromatic curry cooked with coconut milk, fresh vegetables, and Thai herbs.',
+  'Sushi Roll Combo':
+    'An assortment of fresh sushi rolls with fish, avocado, and cucumber.',
+  'BBQ Ribs Platter':
+    'Slow-smoked ribs glazed with tangy barbecue sauce, served with sides.',
+  'Fish & Chips':
+    'Crispy battered fish fillets paired with golden fries and tartar sauce.',
+  'Chicken Tikka Masala':
+    'Marinated chicken simmered in a creamy spiced tomato curry.',
+  'Greek Gyros':
+    'Grilled meat wrapped in pita bread with onions, tomatoes, and tzatziki.',
+  'Taco Supreme':
+    'Soft tacos filled with seasoned meat, lettuce, cheese, and salsa.',
+  'Pad Thai Noodles':
+    'Stir-fried noodles with tamarind sauce, shrimp, tofu, and crushed peanuts.',
+  'Butter Chicken':
+    'Rich and buttery chicken curry in a velvety tomato-based sauce.',
+  'Lamb Kebab':
+    'Charcoal-grilled lamb skewers marinated with Mediterranean spices.',
+  'Seafood Paella':
+    'Spanish saffron rice cooked with shrimp, mussels, and clams.',
+  'Chicken Quesadilla':
+    'Cheesy quesadilla stuffed with seasoned chicken and grilled to perfection.',
+  'Penne Arrabbiata':
+    'Spicy tomato-based pasta with garlic, chilies, and fresh herbs.',
+  'Beef Stir Fry':
+    'Beef strips stir-fried with vegetables in a savory soy glaze.',
+  'Salmon Teriyaki':
+    'Grilled salmon coated with a sweet teriyaki glaze.',
+  'Veggie Burger':
+    'A plant-based burger topped with lettuce, tomato, and vegan mayo.',
+  'Chicken Wings':
+    'Crispy wings tossed in spicy, sweet, or tangy sauces.',
+  'Pork Chops':
+    'Juicy pork chops grilled with garlic butter and herbs.',
+  'Shrimp Scampi':
+    'Shrimp sautéed in garlic butter sauce served over pasta.',
+  'Turkey Sandwich':
+    'Sliced turkey with lettuce, tomato, and mayo on soft bread.',
+  'Chicken Parmesan':
+    'Breaded chicken breast baked with marinara sauce and melted cheese.',
+  'Beef Tacos':
+    'Soft tortillas filled with seasoned ground beef and fresh toppings.',
+  'Veggie Pizza':
+    'Pizza topped with mushrooms, onions, peppers, and olives.',
+  'Chicken Fajitas':
+    'Sizzling strips of chicken with onions and peppers, served with tortillas.',
+  'Pasta Carbonara':
+    'Classic Roman pasta made with bacon, parmesan, and egg sauce.',
+  'Grilled Salmon':
+    'Fresh salmon fillet grilled with lemon and olive oil.',
+  'Chicken Curry':
+    'Traditional chicken curry simmered in onions, tomatoes, and spices.',
+  'Beef Burritos':
+    'Large tortillas stuffed with beef, beans, and rice.',
+  'Vegetable Stir Fry':
+    'Colorful vegetables stir-fried with garlic and soy sauce.',
+  'Chicken Satay':
+    'Skewered chicken grilled and served with peanut sauce.',
+  'Pork Tenderloin':
+    'Roasted pork medallions with a sweet apple glaze.',
+  'Fish Curry':
+    'Fish cooked in a coconut curry sauce with spices.',
+  'Chicken Biryani':
+    'Fragrant basmati rice layered with spiced chicken and herbs.',
+  'Beef Steak':
+    'Tender beef steak grilled to your liking with garlic butter.',
+  'Veggie Wrap':
+    'Soft tortilla wrap with fresh vegetables, hummus, and avocado.',
+  'Chicken Shawarma':
+    'Spiced chicken wrapped in pita bread with garlic sauce.',
+  'Pasta Alfredo':
+    'Creamy fettuccine alfredo made with parmesan and butter.',
+  'Grilled Prawns':
+    'Char-grilled prawns seasoned with lemon and herbs.',
+  'Chicken Korma':
+    'Mild chicken curry made with cashews and cream.',
+  'Beef Noodles':
+    'Savory noodles stir-fried with beef and vegetables.',
+  'Vegetable Curry':
+    'Mixed vegetables simmered in spiced curry sauce.',
+  'Chicken Teriyaki':
+    'Grilled chicken glazed with sweet teriyaki sauce.',
+  'Pork Ribs':
+    'Fall-off-the-bone pork ribs with smoky barbecue sauce.',
+  'Fish Tacos':
+    'Soft tacos with crispy fish, cabbage slaw, and lime crema.',
 };
 
 const generateProductData = () => {
@@ -202,47 +183,46 @@ const generateProductData = () => {
     'Fish Tacos',
   ];
 
-  const prices = [
-    '$6.99',
-    '$7.50',
-    '$8.00',
-    '$8.99',
-    '$9.50',
-    '$10.00',
-    '$10.99',
-    '$11.50',
-    '$12.00',
-    '$12.99',
-    '$13.50',
-    '$14.00',
-    '$15.99',
+  const taglineOptions = [
+    'Customer favorite!',
+    'Chef’s special.',
+    'Limited time offer.',
+    'Made with organic ingredients.',
+    'A must-try dish!',
   ];
 
   const products = [];
 
   for (let i = 1; i <= 100; i++) {
     const nameIndex = (i - 1) % foodNames.length;
-    const priceIndex = Math.floor(Math.random() * prices.length);
-    const isInStock = Math.random() > 0.1;
-
     const productName =
       foodNames[nameIndex] +
       (Math.floor((i - 1) / foodNames.length) > 0
         ? ` ${Math.floor((i - 1) / foodNames.length) + 1}`
         : '');
 
+    // Price formula (index-based)
+    const price = `$${(10 + (i % 15) * 2.5).toFixed(2)}`;
+
+    // Stock logic (every 6th item out of stock)
+    const isInStock = i % 6 !== 0;
+
+    // Deterministic image cycle
+    const imageCycle = [imagePath?.burger, imagePath?.chicken, imagePath?.Pizza1];
+    const image = imageCycle[i % imageCycle.length];
+
+    // Description with optional tagline
+    const extraLine = taglineOptions[i % taglineOptions.length];
+    const description = `${productDescriptions[productName]} ${extraLine}`;
+const isVegetarian = (item) => vegetarianItems.includes(item);
+
     products.push({
       id: i.toString(),
       name: productName,
-      price: prices[priceIndex],
-      image:
-        i % 2 == 0
-          ? imagePath?.burger
-          : i % 3 == 0
-          ? imagePath?.chicken
-          : imagePath.Pizza1,
+      price,
+      image,
       inStock: isInStock,
-      description: getProductDescription(productName),
+      description,
       isVeg: isVegetarian(productName),
     });
   }
